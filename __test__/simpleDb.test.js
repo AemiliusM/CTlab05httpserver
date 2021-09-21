@@ -3,7 +3,7 @@ const SimpleDb = require('../lib/simpleDb.js');
 
 
 describe('simple db', () => {
-  const rootDir = './__tests__/store';
+  const rootDir = '../__tests__/store';
 
   beforeEach(async () => {
     await rm(rootDir, { force: true, recursive: true });
