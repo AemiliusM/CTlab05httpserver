@@ -29,4 +29,9 @@ describe('get static routes, return html from get', () => {
     expect(res.statusCode).toEqual(404);
   });
 
+  it('should return 404 from GET folder of /styles', async () => {
+    const res = await request(app).get('/styles');
+    expect(res.statusCode).toEqual(404);
+  });
+
 });
